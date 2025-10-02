@@ -1,7 +1,6 @@
 # 🧩 LeetCode 150 Solutions
 
-This repository contains my solutions to the **LeetCode 150** curated problems.  
-Each solution is written with readability and clarity in mind, and most include explanations, approaches, and optimized implementations.
+This repository contains my solutions to the **LeetCode 150** curated problems.
 
 ---
 
@@ -27,23 +26,14 @@ Solving them helps strengthen problem-solving skills in:
 
 ```
 leetcode-150/
-│── arrays_and_strings/
-│── two_pointers/
-│── sliding_window/
-│── hash_map/
-│── intervals/
-│── stack/
-│── linked_list/
-│── binary_tree/
-│── graphs/
-│── dynamic_programming/
+│── 00_arrays_and_strings/
 │── README.md
 ```
 
 Each folder contains:
 
-- `problem_name.py` ()  
-- Explanation in comments/docstring  
+- `number_problem_name.py` ()  
+- Explanation at the end of the class Solution in each exercise
 
 ---
 
