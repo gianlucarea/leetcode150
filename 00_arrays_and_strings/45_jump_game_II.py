@@ -15,17 +15,20 @@ import unittest
 
 class Solution:
     def jump(self, nums: List[int]) -> int:        
-        jumps = 0
-        farthest = 0
-        current_end = 0
+        jumps, farthest, end = 0 , 0 ,0 
 
-        for i in range(len(nums) - 1):  
+        for i in range(len(nums)-1):
             farthest = max(farthest, i + nums[i])
-            if i == current_end:  
-                jumps += 1
-                current_end = farthest
-        return jumps
 
+            if farthest >= (len(nums) - 1):
+                jumps += 1
+                break
+
+            if i == end:
+                jumps += 1
+                end = farthest
+
+        return jumps
     
 # We track the farthest point reachable within the current number of jumps (current_end),
 # and the farthest point reachable overall so far (farthest).
