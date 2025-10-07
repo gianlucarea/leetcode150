@@ -48,5 +48,8 @@ class TestJumpGameII(unittest.TestCase):
     def test_case3(self):
         self.assertEqual(self.sol.jump([2,3,1]), 1)  
 
+    def test_case4(self):
+        self.assertEqual(self.sol.jump([1,4,2,8,3,4,8,4,11,1,2,0,4,0,6]),4)
+
 if __name__ == "__main__":
     unittest.main()
